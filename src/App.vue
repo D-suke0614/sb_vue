@@ -1,15 +1,17 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <ParentComp />
+  <AppHeader />
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import ParentComp from '@/components/ParentComp1.vue';
+import AppHeader from '@/components/AppHeader.vue';
 
 export default {
-  name: 'App',
   components: {
-    ParentComp
+    AppHeader
   }
 }
 </script>

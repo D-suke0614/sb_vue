@@ -1,6 +1,11 @@
 <template>
   <div class="parent">
-    <ChildComp1 msg="あいうえお" v-on:ChildClick="parentMethodA"/>
+    <ChildComp1 msg="あいうえお" v-on:ChildClick="parentMethodA">
+      <template v-slot:msgA>メッセージA</template>
+      <template v-slot:msgB>メッセージB</template>
+      <template v-slot:msgC>メッセージC</template>
+    </ChildComp1>
+
     <ChildComp2 msg="ABCDE"/>
     <ChildComp3 msg="12345"/>
   </div>
